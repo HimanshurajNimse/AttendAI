@@ -2,7 +2,7 @@
 
 **Attendance, reimagined.** AttendAI is a Streamlit web app that automates classroom attendance using **face recognition** and **voice recognition**, backed by a Supabase database.
 
-![AttendAI Screenshot](streamlit_capture.jpg)
+![AttendAI Screenshot](Streamlit_capture.png)
 
 ## Features
 
