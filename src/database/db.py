@@ -110,8 +110,20 @@ def get_student_subjects(student_id):
     return response.data
 
 def get_student_attendance_logs(student_id):
-    response=supabase.table('attendance_logs').select("*").eq('student_id',student_id).execute()
-    return response.data
+    response = (
+        supabase
+        .table('attendance_logs')
+        .select("*")
+        .eq('student_id', student_id)
+        .execute()
+    )
+
+    logs = response.data
+
+    for log in logs:
+        log['status'] = 'present' if log.get('is_present', False) else 'absent'
+
+    return logs
 
 def create_attendance(logs):
     response=supabase.table('attendance_logs').insert(logs).execute()

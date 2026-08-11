@@ -130,7 +130,8 @@ def student_screen():
     )
     st.space()
 
-    show_registration=False
+    if "show_registration" not in st.session_state:
+        st.session_state.show_registration = False
 
     photo_src=st.camera_input("Position your face in center")
     if photo_src:
@@ -140,8 +141,9 @@ def student_screen():
         with st.spinner('AI is scanning..'):
             detected,all_ids,num_face=predict_attendance(img)
 
-            if num_face==0:
-                st.warning('face not found!')
+            if num_face == 0:
+                st.warning('face not found! Position your face properly')
+                #st.session_state.show_registration = True
             elif num_face>1:
                 st.warning('Multiple faces found!')
 
@@ -163,10 +165,10 @@ def student_screen():
 
                 else:
                     st.info('Face not recognized! You might be a new student!')
-                    show_registration=True
+                    st.session_state.show_registration = True
 
 
-    if show_registration  :
+    if st.session_state.show_registration:
         with st.container(border=True):
             st.markdown(
                     """

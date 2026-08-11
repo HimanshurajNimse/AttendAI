@@ -42,8 +42,7 @@ def get_face_embeddings(image_np):
     )
     st.write("Faces Found:", len(faces_cv))
 
-    for (x, y, w, h) in faces_cv:
-        st.write(f"x={x}, y={y}, w={w}, h={h}")
+    
     encodings = []
 
     for (x, y, w, h) in faces_cv:
@@ -63,7 +62,7 @@ def get_face_embeddings(image_np):
         )
 
         encodings.append(np.array(descriptor))
-    st.write("Embeddings:", len(encodings))
+   
 
     return encodings
 
