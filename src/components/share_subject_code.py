@@ -8,7 +8,7 @@ import io
 
 @st.dialog("Share Class Link")
 def share_subject_code(subject_name, subject_code):
-    app_domain="attendai.streamlit.app"
+    app_domain="attend-ai-app.streamlit.app"
     join_url=f"{app_domain}/?join={subject_code}"
 
     st.markdown(f"""<h2 style="text-align:center;">Scan to Join</h2>""",unsafe_allow_html=True)
