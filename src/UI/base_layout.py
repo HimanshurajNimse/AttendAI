@@ -11,10 +11,10 @@ def base_style_layout():
                 .stApp{
                     background:#0F1117;
                     color:#F8FAFC;  }
-                /* Hide top bar of streamlit */
-                    #MainMenu,footer,header{
+                
+                    #MainMenu,footer{
                         visibility:hidden;
-                }
+                    }
                 .block-container{
                         padding-top:1.5rem !important;
                     }
