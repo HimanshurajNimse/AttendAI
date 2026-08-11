@@ -114,4 +114,8 @@ Contributions, issues, and feature requests are welcome. Feel free to fork the r
 
 ## License
 
-No license has been specified for this repository yet. Please contact the repository owner before reuse or distribution.
+© Himanshuraj Nimse. All rights reserved.
+
+This code is publicly visible for viewing purposes only. You may not use, copy, modify, distribute, or deploy this project (in whole or in part) without first contacting and getting explicit permission from the author.
+
+📩 If you'd like to use this project, please reach out to the repository owner (HimanshurajNimse) before doing so.
