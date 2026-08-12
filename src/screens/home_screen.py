@@ -14,7 +14,7 @@ def home_screen():
     with col1:
             st.markdown("<h2 style='text-align:center;'>I AM TEACHER</h2>", unsafe_allow_html=True)
             st.image("https://i.ibb.co/pv7Vh3Wj/Chat-GPT-Image-Jul-21-2026-01-53-43-PM.png",width=180)
-            if st.button('teacher Portal',icon=':material/arrow_outward:',use_container_width=True):
+            if st.button('Teacher Portal',icon=':material/arrow_outward:',use_container_width=True):
                 st.session_state['login_type']='teacher'
                 st.rerun()
 
