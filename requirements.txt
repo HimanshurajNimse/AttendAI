@@ -1,5 +1,6 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch
+
 # Web App
 streamlit
 
@@ -12,9 +13,8 @@ opencv-contrib-python==4.11.0.86
 
 # Face Recognition
 scikit-learn
-dlib
+dlib-bin
 git+https://github.com/ageitgey/face_recognition_models
-setuptools<70.0.0
 
 # Database
 supabase
@@ -25,8 +25,6 @@ segno
 
 # Images
 Pillow
-
-
 
 # Voice Recognition
 librosa
